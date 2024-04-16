@@ -6,6 +6,15 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+        },
+      },
+    ],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -16,6 +25,7 @@ const config: Config = {
     },
   },
   plugins: [
+    require('daisyui'),
     require('tailwindcss-rtl'),
     require('tailwindcss-dir')(),
   ],
