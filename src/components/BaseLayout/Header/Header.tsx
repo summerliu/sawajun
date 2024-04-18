@@ -1,20 +1,14 @@
-// import Logo from '@/components/BaseLayout/Header/Logo';
-// import NavDrawer from '@/components/BaseLayout/Header/NavDrawer/NavDrawer';
-// import NavMenu from '@/components/BaseLayout/Header/NavMenu/NavMenu';
-// import UserAction from '@/components/BaseLayout/Header/UserAction';
+import Logo from '@/components/BaseLayout/Header/Logo';
+import LanguageSwitcher from '@/components/BaseLayout/Header/LanguageSwitcher';
 
 export default function Header() {
   return (
-    <header className="navbar min-w-[20rem] items-stretch border-b-[1px] border-b-og-neutral-300 px-4 py-0">
-      <div className="flex-none sm:hidden">
-        {/* <NavDrawer /> */}
-      </div>
+    <header className="navbar min-w-[20rem] items-stretch border-b-[1px] border-b-neutral-300 px-4 py-0">
       <div className="flex-1">
-        {/* <Logo className="me-6" />
-        <NavMenu /> */}
+        <Logo />
       </div>
       <div className="flex-none">
-        {/* <UserAction /> */}
+        <LanguageSwitcher/>
       </div>
     </header>
   );

@@ -1,5 +1,8 @@
 {
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
   "plugins": [
     "@typescript-eslint",
     "no-relative-import-paths"
@@ -36,5 +39,5 @@
       "warn",
       { "allowSameFolder": false, "prefix": "@", "rootDir": "src" }
     ]
-  },
+  }
 }

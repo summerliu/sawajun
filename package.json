@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "i18next": "^23.11.2",
     "next": "14.0.2",
     "next-i18next": "^15.3.0",

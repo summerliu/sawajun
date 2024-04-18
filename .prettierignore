@@ -4,10 +4,6 @@
 .pnp.js
 pnpm-lock.yaml
 
-# testing
-/coverage
-/reports
-
 # next.js
 /.next/
 /out/

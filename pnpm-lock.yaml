@@ -8,6 +8,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^7.7.0
   '@typescript-eslint/parser': ^7.7.0
   autoprefixer: ^10.0.1
+  classnames: ^2.5.1
   daisyui: ^4.10.1
   eslint: ^8.57.0
   eslint-config-next: 14.0.2
@@ -30,6 +31,7 @@ specifiers:
   typescript: ^5
 
 dependencies:
+  classnames: 2.5.1
   i18next: 23.11.2
   next: 14.0.2_biqbaboplfbrettd7655fr4n2y
   next-i18next: 15.3.0_ek2kojvs7rcmpwd2mqunb474qe
@@ -1260,6 +1262,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /classnames/2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+    dev: false
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
