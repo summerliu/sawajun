@@ -1,0 +1,42 @@
+/* export const HEADING_TAG: Record<DefinedSize, TextTag> = {
+  [TextSize.Xl]: TextTag.H1,
+  [TextSize.Lg]: TextTag.H2,
+  [TextSize.Md]: TextTag.H3,
+  [TextSize.Sm]: TextTag.H4,
+  [TextSize.Xs]: TextTag.H5,
+}; */
+.headline-xs {
+  @apply text-[1.125rem] tracking-normal sm:text-[1.125rem] sm:tracking-normal;
+}
+
+.headline-sm {
+  @apply text-[1.25rem] tracking-[-.025rem] sm:text-[1.25rem] sm:tracking-[-.025rem];
+}
+
+.headline-md {
+  @apply text-[1.5rem] tracking-[-.03rem] sm:text-[1.5rem] sm:tracking-[-.03rem];
+}
+
+.headline-lg {
+  @apply text-[1.75rem] tracking-[-.035rem] sm:text-[1.75rem] sm:tracking-[-.035rem];
+}
+
+.headline-xl {
+  @apply text-[2.5rem] tracking-[-.05rem] sm:text-[2.5rem] sm:tracking-[-.05rem];
+}
+
+.body-xs {
+  @apply text-[0.75rem];
+}
+
+.body-sm {
+  @apply text-[0.875rem];
+}
+
+.body-md {
+  @apply text-[1rem];
+}
+
+.body-lg {
+  @apply text-[1.125rem];
+}

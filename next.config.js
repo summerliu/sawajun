@@ -7,6 +7,18 @@ const webpack = require('webpack');
 const nextConfig = {
   reactStrictMode: true,
   i18n,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com'
+      },
+      {
+        protocol: "https",
+        hostname: "*.googleusercontent.com",
+      }
+    ]
+  },
   webpack: (config, options) => {
     const { isServer } = options;
     // Do not run type checking twice:

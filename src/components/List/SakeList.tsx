@@ -1,12 +1,10 @@
-import { useTranslation } from "next-i18next";
+import Card from "@/components/common/Cards/Card";
+import data from '@/data/data.json';
 
 export default function SakeList() {
-  const { t } = useTranslation('common');
   return (
-    <div className="">
-      <div className="flex-1">
-        {t('sake')}
-      </div>
+    <div className="flex flex-wrap gap-y-6 sm:gap-x-6 sm:gap-y-8">
+      {data.products.map((item) => <Card key={item.title} item={item}/>)}
     </div>
   );
 }

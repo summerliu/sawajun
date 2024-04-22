@@ -34,6 +34,7 @@ export default function ImageWithBlur({
       data-testid="image-with-blur"
       placeholder="blur"
       blurDataURL={dataURL}
+      fill
       src={src}
       alt={alt}
       priority={priority}
