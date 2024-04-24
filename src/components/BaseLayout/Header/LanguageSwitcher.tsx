@@ -1,11 +1,15 @@
 import { useTranslation } from 'next-i18next';
-
-function distinct<T>(arr: Array<T>) {
-  return Array.from(new Set<T>(arr));
-}
+import { useEffect, useState } from 'react';
 
 export default function I18nSelect() {
   const { i18n } = useTranslation('common');
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const languages = isClient ? i18n.languages : [];
 
   return (
     <label className="label cursor-pointer px-2 text-sm">
@@ -17,7 +21,7 @@ export default function I18nSelect() {
           i18n.changeLanguage(e.target.value);
         }}
       >
-        {distinct(i18n.languages.concat('cimode')).map(key => (
+        {languages.map(key => (
           <option key={key} value={key}>
             {key}
           </option>

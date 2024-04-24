@@ -1,5 +1,5 @@
 import SakeList from '@/components/List/SakeList'
-import ShuzoList from '@/components/List/ShuzoList'
+// import ShuzoList from '@/components/List/ShuzoList'
 import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Inter } from 'next/font/google'
@@ -19,7 +19,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 export default function Home() {
   return (
     <div>
-      <ShuzoList/>
+      {/* <ShuzoList/> */}
       <SakeList/>
     </div>
   )

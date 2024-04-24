@@ -24,7 +24,7 @@ export default function Card({item}: Props) {
   const { t } = useTranslation('common');
 
   return (
-    <div className="card rounded-lg group hover:shadow-md w-full sm:w-[calc((100%-(1.5rem*1))/2)] lg:w-[calc((100%-(1.5rem*2))/3)] xl:w-[calc((100%-(1.5rem*3))/4)]">
+    <div className="card rounded-lg group w-full sm:w-[calc((100%-(1.5rem*1))/2)] lg:w-[calc((100%-(1.5rem*2))/3)] xl:w-[calc((100%-(1.5rem*3))/4)]">
       <div className="relative aspect-[3/2] rounded-tl-lg rounded-tr-lg">
         <ImageWithBlur key={item.title} alt={item.title} src={item.image} sizes="200px"/>
       </div>
