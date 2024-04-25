@@ -26,7 +26,7 @@ export default function Sakes() {
 
   return (
     <div>
-      <h1 >User ID: {sakeId}</h1>
+      <h1>Sake ID: {sakeId}</h1>
     </div>
   );
 }

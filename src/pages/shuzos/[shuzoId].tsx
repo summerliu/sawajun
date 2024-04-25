@@ -26,7 +26,7 @@ export default function Shuzos() {
 
   return (
     <div>
-      <h1 >User ID: {shuzoId}</h1>
+      <h1>Shuzo ID: {shuzoId}</h1>
     </div>
   );
 }
