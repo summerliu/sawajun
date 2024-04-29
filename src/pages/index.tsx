@@ -19,8 +19,8 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 export default function Home() {
   return (
     <div>
-      <ShuzoList/>
       <SakeList/>
+      <ShuzoList/>
     </div>
   )
 }

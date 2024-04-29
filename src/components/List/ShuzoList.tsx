@@ -9,12 +9,14 @@ import ShuzoCard from "@/components/common/Cards/ShuzoCard";
 export default function ShuzoList() {
   const { t } = useTranslation('common');
   return (
-    <div className="">
+    <div className="pb-12">
       <Typography textTag={TextTag.H1} className={styles['headline-xl']}>
         {t('shuzo')}
       </Typography>
 
-      {data.map((item) => <ShuzoCard key={item.name} item={item} />)}
+      <div className="flex flex-wrap gap-y-7 sm:gap-x-6 sm:gap-y-9">
+        {data.map((item) => <ShuzoCard key={item.name} item={item} />)}
+      </div>
     </div>
   );
 }

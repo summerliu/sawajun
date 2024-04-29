@@ -16,6 +16,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "*.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: '*.googleapis.com'
       }
     ]
   },
@@ -25,6 +29,22 @@ const nextConfig = {
     if (isServer) {
       config.plugins.push(new ForkTsCheckerWebpackPlugin());
     }
+
+    config.module.rules.push({
+      test: /\.svg$/i,
+      oneOf: [
+        {
+          issuer: /\.[jt]sx?$/,
+          resourceQuery: { not: [/raw/, /img/] },
+          use: '@svgr/webpack',
+        },
+        {
+          resourceQuery: /img/,
+          type: 'asset/resource',
+        }
+      ],
+    });
+
     return config;
   },
 }
