@@ -8,7 +8,6 @@ type Props = {
 export default function BurgerButton({ onClick }: Props) {
   return (
     <button
-      data-testid="burger-button"
       onClick={onClick}
       className="flex h-[2.375rem] w-[2.375rem] items-center justify-center"
     >

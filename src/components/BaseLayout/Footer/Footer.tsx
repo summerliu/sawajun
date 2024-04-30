@@ -2,7 +2,7 @@ import Logo from "@/components/BaseLayout/Header/Logo";
 
 export default function Footer() {
   return (
-    <footer className="footer footer-center min-w-[20rem] bg-neutral-200 px-4 py-0 text-base-content sm:px-6 xl:px-8">
+    <footer className="footer footer-center min-w-[20rem] bg-primary px-4 py-0 text-secondary sm:px-6 xl:px-8">
       {/* <div className="flex w-full flex-col items-center justify-center border-b-[1px] border-b-neutral-500 pb-4 pt-8 lg:pb-6 lg:pt-10"> */}
         <Logo/>
       {/* </div> */}

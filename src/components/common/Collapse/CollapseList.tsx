@@ -25,13 +25,12 @@ export default function CollapseList({
       <div
         className="collapse-title relative flex items-center"
         onClick={handleCollapse}
-        data-testid="collapse-trigger"
       >
         <div className="flex items-center">
           {title}
           {countNode}
         </div>
-        <div data-testid="collapse-icon" className="absolute end-0 top-0 pt-4">
+        <div className="absolute end-0 top-0 pt-4">
           {isOpen ? <ArrowBottomSvg /> : <ArrowTopSvg />}
         </div>
       </div>

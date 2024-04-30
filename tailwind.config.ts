@@ -22,6 +22,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        primary: '#F49D42',
+        secondary: '#0B2C2B',
+      }
     },
   },
   plugins: [

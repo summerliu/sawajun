@@ -38,7 +38,6 @@ export default function DropdownToggle({
 
   return (
     <Wrapper
-      data-testid="dropdown-toggle"
       tabIndex={0}
       {...props}
       className={classNames('cursor-pointer', className)}

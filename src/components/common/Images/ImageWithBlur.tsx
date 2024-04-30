@@ -31,7 +31,6 @@ export default function ImageWithBlur({
 
   return (
     <Image
-      data-testid="image-with-blur"
       placeholder="blur"
       blurDataURL={dataURL}
       fill

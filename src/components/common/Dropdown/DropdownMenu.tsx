@@ -12,7 +12,6 @@ export default function DropdownMenu({
 }: DropdownMenuProps) {
   return (
     <ul
-      data-testid="dropdown-menu"
       tabIndex={0}
       role="menu"
       className={classNames(

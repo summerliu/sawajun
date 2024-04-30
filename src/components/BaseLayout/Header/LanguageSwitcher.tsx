@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
+import LanguageSvg from '@/components/assets/outlined/language.svg';
 
 export default function I18nSelect() {
   const { i18n } = useTranslation('common');
@@ -9,21 +10,24 @@ export default function I18nSelect() {
     setIsClient(true);
   }, []);
 
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLanguage = e.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
+
   const languages = isClient ? i18n.languages : [];
 
   return (
-    <label className="label cursor-pointer px-2 text-sm">
-      <span className="label-text">I18n</span>
+    <label className="label cursor-pointer px-2 text-sm flex items-center">
+      <LanguageSvg viewBox="0 0 24 24" className="w-4 h-4 mr-2" />
       <select
-        className="mr-1 py-0"
+        className="mr-4 py-0"
         value={i18n.language}
-        onChange={e => {
-          i18n.changeLanguage(e.target.value);
-        }}
+        onChange={handleLanguageChange}
       >
-        {languages.map(key => (
-          <option key={key} value={key}>
-            {key}
+        {languages.length && languages.map((lang) => (
+          <option key={lang} value={lang}>
+            {lang}
           </option>
         ))}
       </select>

@@ -31,7 +31,6 @@ export default function Drawer({
 
   return (
     <div
-      data-testid="drawer"
       aria-expanded={open}
       {...otherProps}
       className={classNames('drawer', className, { 'drawer-end': end })}
@@ -44,17 +43,14 @@ export default function Drawer({
         readOnly
       />
       <div
-        data-testid="drawer-content"
         className={classNames('drawer-content', contentClassName)}
       >
         {children}
       </div>
       <div
-        data-testid="drawer-side"
         className={classNames('drawer-side', sideClassName)}
       >
         <label
-          data-testid="drawer-overlay"
           className={classNames('drawer-overlay', overlayClassName)}
           onClick={onClickOverlay}
         ></label>
