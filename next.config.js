@@ -5,6 +5,8 @@ const { i18n } = require('./next-i18next.config');
 const webpack = require('webpack');
 
 const nextConfig = {
+  basePath: '',
+  // output: "export",
   reactStrictMode: true,
   i18n,
   images: {
