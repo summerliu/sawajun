@@ -1,0 +1,20 @@
+// @reference https://developer.mozilla.org/en-US/docs/Web/HTML/Element#text_content
+export enum TextTag {
+  P = 'p',
+  Div = 'div',
+  Span = 'span',
+  Label = 'label',
+  Figure = 'figure',
+  Hr = 'hr',
+  Li = 'li',
+  Menu = 'menu',
+  Ol = 'ol',
+  Pre = 'pre',
+  Ul = 'ul',
+  H1 = 'h1',
+  H2 = 'h2',
+  H3 = 'h3',
+  H4 = 'h4',
+  H5 = 'h5',
+  H6 = 'h6',
+}

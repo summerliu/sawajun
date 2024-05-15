@@ -6,6 +6,15 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+        },
+      },
+    ],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -13,8 +22,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        primary: '#F49D42',
+        secondary: '#0B2C2B',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+    require('tailwindcss-rtl'),
+    require('tailwindcss-dir')(),
+  ],
 }
 export default config
