@@ -1,5 +1,5 @@
 import SakeCard from "@/components/common/Cards/SakeCard";
-import data from '@/data/sakeData.json';
+import data from '@/data/data.json';
 
 export default function SakeList() {
   return (

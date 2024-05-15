@@ -34,13 +34,16 @@ export default function SakeCard({ item }: Props) {
       <div className="relative aspect-[3/2] rounded-tl-lg rounded-tr-lg">
         <ImageWithBlur key={item.name} alt={item.name} src={item.image} sizes="200px"/>
       </div>
-      <div className="card-body gap-0 p-0 text-center pb-3">
-        <Typography textTag={TextTag.H4} className={classNames(styles['headline-sm'], "py-2 sm:py-3 font-semibold")}>
-          {item.name}
-        </Typography>
-        <Typography textTag={TextTag.H5} className={classNames(styles['headline-xs'], "text-center pb-2 sm:pb-3")}>
-          ${item.price}
-        </Typography>
+      <div className="card-body gap-0 p-0 text-center pb-3 flex justify-between">
+        <div>
+          <Typography textTag={TextTag.H4} className={classNames(styles['headline-sm'], "py-2 sm:py-3 font-semibold")}>
+            {item.name}
+          </Typography>
+          <Typography textTag={TextTag.H5} className={classNames(styles['headline-xs'], "text-center pb-2 sm:pb-3")}>
+            ${item.price}
+          </Typography>
+        </div>
+
         <div className="w-full">
           <button className="min-w-[3.5rem] rounded-md border py-2 px-4 bg-secondary text-white flex items-center justify-center m-auto gap-1" onClick={handleClick}>
             {t('add-to-cart')}

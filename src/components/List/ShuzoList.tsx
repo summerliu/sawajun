@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import Typography from "@/components/common/Typography/Typography";
 import { TextTag } from "@/components/common/Typography/types";
 import styles from '@/components/common/Typography/Typography.module.css';
-import data from '@/data/shuzoData.json';
+import data from '@/data/data.json';
 import ShuzoCard from "@/components/common/Cards/ShuzoCard";
 
 export default function ShuzoList() {
